@@ -22,7 +22,8 @@ namespace AS2122_3G_INF_CianiDiaco_GestionePizzeria
         {
             int margherita = 0, formaggi = 0, verdure = 0; 
             int temp = Convert.ToInt32(txtQuantità.Text);
-            switch (cmbScelta.Text)
+            string scelta = cmbScelta.Text;
+            switch (scelta)
             {
                 case "Pizza margherita":
                     margherita = margherita + temp;
@@ -39,7 +40,6 @@ namespace AS2122_3G_INF_CianiDiaco_GestionePizzeria
                     lstPizze.Text = "Pizza con verdure" + temp;
                     lblNumPizVerd.Text = Convert.ToString(verdure);
                     break;
-          
             }
         }
     }
