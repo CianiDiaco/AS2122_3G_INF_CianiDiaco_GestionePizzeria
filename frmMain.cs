@@ -20,15 +20,14 @@ namespace AS2122_3G_INF_CianiDiaco_GestionePizzeria
 
         private void btnAggiungi_Click(object sender, EventArgs e)
         {
-            int margherita = 0, formaggi = 0, verdure = 0; 
-            int temp = Convert.ToInt32(txtQuantità.Text);
+            int /*margherita*/ = 0, formaggi = 0, verdure = 0; 
+            int quantita, temp = Convert.ToInt32(txtQuantità.Text);
             string scelta = cmbScelta.Text;
             switch (scelta)
             {
                 case "Pizza margherita":
-                    margherita = margherita + temp;
-                    lstPizze.Text = "Pizza margherita" + temp;
-                    lblNumPizMarg.Text = Convert.ToString(margherita);
+                    lstPizze.Items.Add($"{scelta} {quantita}");
+                    lblNumPizMarg.Text = Convert.ToString(Convert.ToInt32(lblNumPizMarg.Text) + quantita);
                     break;
                 case "Pizza quattro formaggi":
                     formaggi = formaggi + temp;
