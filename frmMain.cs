@@ -26,18 +26,20 @@ namespace AS2122_3G_INF_CianiDiaco_GestionePizzeria
             {
                 case "Pizza margherita":
                     margherita = margherita + temp;
-                    lstPizze.Text = "margherita" + temp;
+                    lstPizze.Text = "Pizza margherita" + temp;
                     lblNumPizMarg.Text = Convert.ToString(margherita);
                     break;
                 case "Pizza quattro formaggi":
                     formaggi = formaggi + temp;
-                    lstPizze.Text = "quattro formaggi" + temp;
+                    lstPizze.Text = "Pizza quattro formaggi" + temp;
                     lblNumPizQuattroFormaggi.Text = Convert.ToString(formaggi);
                     break;
                 case "Pizza con verdure":
+                    verdure = verdure + temp;
+                    lstPizze.Text = "Pizza con verdure" + temp;
+                    lblNumPizVerd.Text = Convert.ToString(verdure);
                     break;
-                default
-                   
+          
             }
         }
     }
