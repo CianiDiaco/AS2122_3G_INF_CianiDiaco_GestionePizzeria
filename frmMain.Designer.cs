@@ -128,6 +128,7 @@ namespace AS2122_3G_INF_CianiDiaco_GestionePizzeria
             this.btnAggiungi.TabIndex = 8;
             this.btnAggiungi.Text = "aggiungi";
             this.btnAggiungi.UseVisualStyleBackColor = true;
+            this.btnAggiungi.Click += new System.EventHandler(this.btnAggiungi_Click);
             // 
             // lstPizze
             // 

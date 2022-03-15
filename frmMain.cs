@@ -17,5 +17,9 @@ namespace AS2122_3G_INF_CianiDiaco_GestionePizzeria
             InitializeComponent();
         }
 
+        private void btnAggiungi_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
